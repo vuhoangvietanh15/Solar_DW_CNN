@@ -1,0 +1,6 @@
+{
+  "best_val_masked_mse_normalized": 0.9287693500518799,
+  "neighbor_baseline_masked_mse_normalized": 1.269734930626352,
+  "beats_neighbor_baseline": true,
+  "note": "Masked prediction risk, NOT clean-target error or scientific SNR."
+}

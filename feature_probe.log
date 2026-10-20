@@ -1,0 +1,50 @@
+TensorFlow: 2.15.1 GPU: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')] precision: mixed_float16
+{
+  "injections": [
+    {
+      "sigma_bins": 0.5,
+      "peak_response_median": 0.13529910147190094,
+      "integrated_response_median": 0.9997583627700806,
+      "response_rmse_normalized": 0.04469507560133934
+    },
+    {
+      "sigma_bins": 1.0,
+      "peak_response_median": 0.6063562631607056,
+      "integrated_response_median": 0.9997424483299255,
+      "response_rmse_normalized": 0.02094637043774128
+    },
+    {
+      "sigma_bins": 2.0,
+      "peak_response_median": 0.8821921944618225,
+      "integrated_response_median": 0.9997285604476929,
+      "response_rmse_normalized": 0.00856859888881445
+    },
+    {
+      "sigma_bins": 4.0,
+      "peak_response_median": 0.9688615798950195,
+      "integrated_response_median": 0.9997245073318481,
+      "response_rmse_normalized": 0.003161401953548193
+    },
+    {
+      "sigma_bins": 8.0,
+      "peak_response_median": 0.9918263554573059,
+      "integrated_response_median": 0.9997286796569824,
+      "response_rmse_normalized": 0.0011496683582663536
+    },
+    {
+      "sigma_bins": 16.0,
+      "peak_response_median": 0.9976522922515869,
+      "integrated_response_median": 0.9997246265411377,
+      "response_rmse_normalized": 0.00043978073517791927
+    }
+  ],
+  "sampled_frame_indices": [
+    0,
+    477,
+    954,
+    1432
+  ],
+  "injection_amplitude_db": 0.023236983701811202,
+  "adjacent_bin_correlation_of_sampled_temporal_differences": 0.003198706788322199,
+  "interpretation": "Response 1 means retention, 0 means suppression. Narrow astronomical lines and narrow RFI are indistinguishable without labels. This is a sensitivity probe, NOT clean-target accuracy. Correlation is descriptive, not proof of noise independence."
+}

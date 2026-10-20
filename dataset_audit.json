@@ -1,0 +1,72 @@
+[
+  {
+    "day": "2024_08_28",
+    "files": 2500,
+    "bins": 512,
+    "first_mhz": 621.4,
+    "last_mhz": 622.5977,
+    "recorded_db_min": -3.7578999996185303,
+    "recorded_db_max": -3.0848000049591064,
+    "frequency_axis_verified": false
+  },
+  {
+    "day": "2024_10_11",
+    "files": 523,
+    "bins": 512,
+    "first_mhz": 609.5,
+    "last_mhz": 610.498,
+    "recorded_db_min": -36.5359992980957,
+    "recorded_db_max": -36.15299987792969,
+    "frequency_axis_verified": false
+  },
+  {
+    "day": "2025_03_20",
+    "files": 1433,
+    "bins": 512,
+    "first_mhz": 608.8,
+    "last_mhz": 611.1953,
+    "recorded_db_min": -32.167999267578125,
+    "recorded_db_max": -31.936599731445312,
+    "frequency_axis_verified": false
+  },
+  {
+    "day": "2025_03_21",
+    "files": 1433,
+    "bins": 512,
+    "first_mhz": 608.8,
+    "last_mhz": 611.1953,
+    "recorded_db_min": -32.16379928588867,
+    "recorded_db_max": -31.944599151611328,
+    "frequency_axis_verified": false
+  },
+  {
+    "day": "2025_03_22",
+    "files": 1433,
+    "bins": 512,
+    "first_mhz": 608.8,
+    "last_mhz": 611.1953,
+    "recorded_db_min": -32.16310119628906,
+    "recorded_db_max": -31.95319938659668,
+    "frequency_axis_verified": false
+  },
+  {
+    "day": "2025_03_23",
+    "files": 1434,
+    "bins": 512,
+    "first_mhz": 608.8,
+    "last_mhz": 611.1953,
+    "recorded_db_min": -32.17490005493164,
+    "recorded_db_max": -31.944700241088867,
+    "frequency_axis_verified": false
+  },
+  {
+    "day": "2025_03_24",
+    "files": 1433,
+    "bins": 512,
+    "first_mhz": 608.8,
+    "last_mhz": 611.1953,
+    "recorded_db_min": -32.164100646972656,
+    "recorded_db_max": -31.94860076904297,
+    "frequency_axis_verified": false
+  }
+]

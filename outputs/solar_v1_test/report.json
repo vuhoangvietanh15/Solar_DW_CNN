@@ -1,0 +1,12 @@
+{
+  "frames": 1433,
+  "bins": 512,
+  "rms_change_db": 0.022394532337784767,
+  "mean_shift_db": 0.0006850463687442243,
+  "max_abs_change_db": 0.10585403442382812,
+  "mean_abs_frame_mean_shift_db": 0.0012314817868173122,
+  "masked_prediction_mse_normalized": 0.9288049936294556,
+  "clean_reference_available": false,
+  "note": "Changes and masked risk only. No claim of RFI removal, SNR gain, flux or phase preservation.",
+  "neighbor_masked_mse_normalized": 1.2769094705581665
+}

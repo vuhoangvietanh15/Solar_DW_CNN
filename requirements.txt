@@ -1,0 +1,4 @@
+# Python 3.11; independent of the ECG environment.
+tensorflow[and-cuda]==2.15.1
+numpy==1.26.4
+matplotlib==3.9.4

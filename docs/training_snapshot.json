@@ -1,0 +1,39 @@
+{
+  "captured_at": "2026-10-20T10:15:27.645586+07:00",
+  "run": "solar_v1",
+  "completed_logged_epochs": 29,
+  "best_logged_epoch_zero_based": 27,
+  "best_logged_epoch_human": 28,
+  "best_logged_val_masked_mse": 0.9295660853385925,
+  "neighbor_validation_masked_mse": 1.269734930626352,
+  "relative_masked_mse_reduction_pct": 26.790540063346636,
+  "training_report_present": false,
+  "config": {
+    "data": "/home/vietanh/Downloads/ECG/Solar_DW_CNN/data/prepared",
+    "run": "/home/vietanh/Downloads/ECG/Solar_DW_CNN/runs/solar_v1",
+    "epochs": 100,
+    "batch_size": 16,
+    "filters": 64,
+    "mask_period": 8,
+    "learning_rate": 0.0001,
+    "patience": 15,
+    "seed": 42,
+    "mixed_precision": true,
+    "allow_cpu": false,
+    "steps_per_epoch": null,
+    "validation_steps": null,
+    "parameters": 334017,
+    "tensorflow": "2.15.1",
+    "gpu": [
+      "/physical_device:GPU:0"
+    ],
+    "method": "masked_self_supervision",
+    "clean_ground_truth": false,
+    "smoke_only": false
+  },
+  "normalization": {
+    "center_db": -32.055762918963666,
+    "scale_db": 0.023236983701811202
+  },
+  "note": "Fixed snapshot; live run may continue. No clean-reference result implied."
+}

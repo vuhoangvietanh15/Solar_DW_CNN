@@ -1,0 +1,97 @@
+TensorFlow: 2.15.1 GPU: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')] precision: mixed_float16
+Model: "Solar_DW_CNN"
+__________________________________________________________________________________________________
+ Layer (type)                Output Shape                 Param #   Connected to                  
+==================================================================================================
+ masked_value_and_mask (Inp  [(None, 512, 2)]             0         []                            
+ utLayer)                                                                                         
+                                                                                                  
+ conv1d (Conv1D)             (None, 512, 64)              448       ['masked_value_and_mask[0][0]'
+                                                                    ]                             
+                                                                                                  
+ conv1d_1 (Conv1D)           (None, 512, 64)              12352     ['conv1d[0][0]']              
+                                                                                                  
+ conv1d_2 (Conv1D)           (None, 512, 64)              12352     ['conv1d_1[0][0]']            
+                                                                                                  
+ conv1d_3 (Conv1D)           (None, 512, 64)              12352     ['conv1d_2[0][0]']            
+                                                                                                  
+ conv1d_4 (Conv1D)           (None, 512, 64)              12352     ['conv1d_3[0][0]']            
+                                                                                                  
+ haar_dwt (HaarDWT)          (None, 256, 128)             0         ['conv1d_4[0][0]']            
+                                                                                                  
+ conv1d_5 (Conv1D)           (None, 256, 64)              24640     ['haar_dwt[0][0]']            
+                                                                                                  
+ conv1d_6 (Conv1D)           (None, 256, 64)              12352     ['conv1d_5[0][0]']            
+                                                                                                  
+ conv1d_7 (Conv1D)           (None, 256, 64)              12352     ['conv1d_6[0][0]']            
+                                                                                                  
+ conv1d_8 (Conv1D)           (None, 256, 64)              12352     ['conv1d_7[0][0]']            
+                                                                                                  
+ conv1d_9 (Conv1D)           (None, 256, 64)              12352     ['conv1d_8[0][0]']            
+                                                                                                  
+ haar_dwt_1 (HaarDWT)        (None, 128, 128)             0         ['conv1d_9[0][0]']            
+                                                                                                  
+ conv1d_10 (Conv1D)          (None, 128, 64)              24640     ['haar_dwt_1[0][0]']          
+                                                                                                  
+ conv1d_11 (Conv1D)          (None, 128, 64)              12352     ['conv1d_10[0][0]']           
+                                                                                                  
+ conv1d_12 (Conv1D)          (None, 128, 64)              12352     ['conv1d_11[0][0]']           
+                                                                                                  
+ conv1d_13 (Conv1D)          (None, 128, 64)              12352     ['conv1d_12[0][0]']           
+                                                                                                  
+ conv1d_14 (Conv1D)          (None, 128, 64)              12352     ['conv1d_13[0][0]']           
+                                                                                                  
+ conv1d_15 (Conv1D)          (None, 128, 128)             24704     ['conv1d_14[0][0]']           
+                                                                                                  
+ haar_idwt (HaarIDWT)        (None, 256, 64)              0         ['conv1d_15[0][0]']           
+                                                                                                  
+ add (Add)                   (None, 256, 64)              0         ['haar_idwt[0][0]',           
+                                                                     'conv1d_9[0][0]']            
+                                                                                                  
+ conv1d_16 (Conv1D)          (None, 256, 64)              12352     ['add[0][0]']                 
+                                                                                                  
+ conv1d_17 (Conv1D)          (None, 256, 64)              12352     ['conv1d_16[0][0]']           
+                                                                                                  
+ conv1d_18 (Conv1D)          (None, 256, 64)              12352     ['conv1d_17[0][0]']           
+                                                                                                  
+ conv1d_19 (Conv1D)          (None, 256, 64)              12352     ['conv1d_18[0][0]']           
+                                                                                                  
+ conv1d_20 (Conv1D)          (None, 256, 64)              12352     ['conv1d_19[0][0]']           
+                                                                                                  
+ conv1d_21 (Conv1D)          (None, 256, 128)             24704     ['conv1d_20[0][0]']           
+                                                                                                  
+ haar_idwt_1 (HaarIDWT)      (None, 512, 64)              0         ['conv1d_21[0][0]']           
+                                                                                                  
+ add_1 (Add)                 (None, 512, 64)              0         ['haar_idwt_1[0][0]',         
+                                                                     'conv1d_4[0][0]']            
+                                                                                                  
+ conv1d_22 (Conv1D)          (None, 512, 64)              12352     ['add_1[0][0]']               
+                                                                                                  
+ conv1d_23 (Conv1D)          (None, 512, 64)              12352     ['conv1d_22[0][0]']           
+                                                                                                  
+ value_channel (ValueChanne  (None, 512, 1)               0         ['masked_value_and_mask[0][0]'
+ l)                                                                 ]                             
+                                                                                                  
+ correction (Conv1D)         (None, 512, 1)               193       ['conv1d_23[0][0]']           
+                                                                                                  
+ prediction (Add)            (None, 512, 1)               0         ['value_channel[0][0]',       
+                                                                     'correction[0][0]']          
+                                                                                                  
+==================================================================================================
+Total params: 334017 (1.27 MB)
+Trainable params: 334017 (1.27 MB)
+Non-trainable params: 0 (0.00 Byte)
+__________________________________________________________________________________________________
+Epoch 1/2
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792464651.173052   11882 device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+3/3 - 23s - loss: 1.2345 - val_loss: 1.2696 - lr: 1.0000e-04 - 23s/epoch - 8s/step
+Epoch 2/2
+3/3 - 1s - loss: 1.2368 - val_loss: 1.2695 - lr: 1.0000e-04 - 1s/epoch - 457ms/step
+{
+  "best_val_masked_mse_normalized": 1.269520878791809,
+  "neighbor_baseline_masked_mse_normalized": 1.269734930626352,
+  "beats_neighbor_baseline": true,
+  "note": "Masked prediction risk, NOT clean-target error or scientific SNR."
+}
+Best model: runs/gpu_verified/best.keras

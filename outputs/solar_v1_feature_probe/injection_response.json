@@ -1,0 +1,61 @@
+{
+  "injections": [
+    {
+      "sigma_bins": 0.5,
+      "peak_response_median": 0.019156955182552338,
+      "integrated_response_median": 0.697712779045105,
+      "response_rmse_normalized": 0.04388461261987686
+    },
+    {
+      "sigma_bins": 1.0,
+      "peak_response_median": 0.09139522910118103,
+      "integrated_response_median": 0.7371817231178284,
+      "response_rmse_normalized": 0.053577497601509094
+    },
+    {
+      "sigma_bins": 2.0,
+      "peak_response_median": 0.13627222180366516,
+      "integrated_response_median": 0.7484642863273621,
+      "response_rmse_normalized": 0.07214146107435226
+    },
+    {
+      "sigma_bins": 4.0,
+      "peak_response_median": 0.20139354467391968,
+      "integrated_response_median": 0.7833912968635559,
+      "response_rmse_normalized": 0.09494544565677643
+    },
+    {
+      "sigma_bins": 8.0,
+      "peak_response_median": 0.3032061457633972,
+      "integrated_response_median": 0.8175598382949829,
+      "response_rmse_normalized": 0.11870667338371277
+    },
+    {
+      "sigma_bins": 16.0,
+      "peak_response_median": 0.4678027033805847,
+      "integrated_response_median": 0.8695618510246277,
+      "response_rmse_normalized": 0.12047040462493896
+    }
+  ],
+  "sampled_frame_indices": [
+    0,
+    95,
+    190,
+    286,
+    381,
+    477,
+    572,
+    668,
+    763,
+    859,
+    954,
+    1050,
+    1145,
+    1241,
+    1336,
+    1432
+  ],
+  "injection_amplitude_db": 0.023236983701811202,
+  "adjacent_bin_correlation_of_sampled_temporal_differences": 0.0883939337404407,
+  "interpretation": "Response 1 means retention, 0 means suppression. Narrow astronomical lines and narrow RFI are indistinguishable without labels. This is a sensitivity probe, NOT clean-target accuracy. Correlation is descriptive, not proof of noise independence."
+}

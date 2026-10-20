@@ -1,0 +1,15 @@
+test_heldout_data_cannot_change_normalization (test_pipeline.DataTests.test_heldout_data_cannot_change_normalization) ... ok
+test_mask_never_exposes_targets_including_edges (test_pipeline.DataTests.test_mask_never_exposes_targets_including_edges) ... ok
+TensorFlow: 2.15.1 GPU: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')] precision: float32
+test_haar_reconstruction_energy_and_gradient (test_pipeline.NetworkTests.test_haar_reconstruction_energy_and_gradient) ... ok
+test_loss_ignores_visible_bins (test_pipeline.NetworkTests.test_loss_ignores_visible_bins) ... ok
+test_save_reload_and_blind_inference (test_pipeline.NetworkTests.test_save_reload_and_blind_inference) ... /home/vietanh/miniconda3/envs/anh/lib/python3.11/random.py:362: DeprecationWarning: non-integer arguments to randrange() have been deprecated since Python 3.10 and will be removed in a subsequent version
+  return self.randrange(a, b+1)
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1792464804.756039   13233 device_compiler.h:186] Compiled cluster using XLA!  This line is logged at most once for the lifetime of the process.
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 19.962s
+
+OK
